@@ -6,6 +6,7 @@ namespace Calculator
     {
         public static int Add(int a, int b)
         {
+            throw new NotImplementedException();
             return a + b;
         }
         public static int Substract(int a, int b)
