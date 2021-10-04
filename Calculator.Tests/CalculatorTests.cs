@@ -5,6 +5,7 @@ namespace Calculator.Tests
 {
     public class CalculatorTests
     {
+        [Test]
         public void Add_AddsTwoPositiveNumbers_Calculated()
         {
             int sum = Calculator.Add(2, 2);
