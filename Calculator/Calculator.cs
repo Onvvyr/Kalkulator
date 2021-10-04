@@ -6,7 +6,6 @@ namespace Calculator
     {
         public static int Add(int a, int b)
         {
-            throw new NotImplementedException();
             return a + b;
         }
         public static int Substract(int a, int b)
@@ -15,6 +14,7 @@ namespace Calculator
         }
         public static int Divide(int a, int b)
         {
+            if(a == 0 || b ==0) throw new NotImplementedException("nie dziel przez zero");
             return a / b;
         }
         public static int Multiply(int a, int b)

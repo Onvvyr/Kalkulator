@@ -8,7 +8,7 @@ namespace Calculator.Tests
         public void Add_AddsTwoPositiveNumbers_Calculated()
         {
             var calc = new Calculator.Calculator();
-            int sum = calc.Add(2, 2);
+            int sum = calc.CalculatorAdd(4, 2);
             Assert.AreEqual(4, sum);
         }
     }
