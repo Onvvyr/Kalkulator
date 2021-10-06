@@ -14,23 +14,23 @@ namespace Calculator.Tests
         [Test]
         public void Substract_SubstractTwoPositiveNumbers_Calculated()
         {
-            int sub = Calculator.Substract(4, 2);
-            Assert.AreEqual(2, sub);
+            int sub = Calculator.Substract(99, 19);
+            Assert.AreEqual(80, sub);
         }
         [Test]
         public void Multiply_MultiplyTwoPositiveNumbers_Calculated()
         {
-            int Multi = Calculator.Multiply(2, 2);
-            Assert.AreEqual(4, Multi);
+            int Multi = Calculator.Multiply(8, 7);
+            Assert.AreEqual(56, Multi);
         }
         [TestCase]
         public void Divide_ReturnsProperValue()
         {
             var calc = new Calculator();
-            var div = calc.Divide(4, 2);
-            Assert.AreEqual(2, div);
+            var div = calc.Divide(64, 8);
+            Assert.AreEqual(8, div);
         }
-        [Test]
+        [TestCase]
         public void Divide_DivisionByZero_ThrowsException()
         {
             var calc = new Calculator();
